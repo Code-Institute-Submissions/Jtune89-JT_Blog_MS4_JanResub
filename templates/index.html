@@ -15,9 +15,9 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res-console.cloudinary.com/dxztoqowl/thumbnails/v1/image/upload/v1668852856/c2FtcGxlcy9iaWtl/preview">
+                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                                 {% else %}
-                                <img class="card-img-top" src="https://res-console.cloudinary.com/dxztoqowl/thumbnails/v1/image/upload/v1668852856/c2FtcGxlcy9iaWtl/preview">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
