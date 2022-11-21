@@ -9,15 +9,12 @@ body {
     color: #323234;
 }
 
-.red-o {
-    color: #E84610;
-}
-
 .blue-U {
     color:blue;
 }
 .thin {
-    font-weight: 500;
+    font-weight: 700;
+    font-size:2.5rem;
 }
 
 .light-bg {
