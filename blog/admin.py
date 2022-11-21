@@ -4,7 +4,5 @@ from django_summernote.admin import SummernoteModelAdmin
 
 @admin.register (Post)
 class PostAdmin(SummernoteModelAdmin):
+    summernote_fields = ('content')
     
-summernote_fields = ('content')
-
-
