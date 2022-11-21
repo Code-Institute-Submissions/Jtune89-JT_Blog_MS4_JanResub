@@ -60,6 +60,8 @@ LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/'
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
+CRISPY_TEMPLATE_PACK = 'bootstrap 4'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
