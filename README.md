@@ -3,9 +3,7 @@ UK Politics Blog
 
 <img width="996" alt="Screenshot 2022-11-22 at 10 07 09" src="https://user-images.githubusercontent.com/95533259/203286864-9fdba7a8-7983-4f55-9972-7b70752208af.png">
 
-Admin Log In:
-Username: Admin1
-Password: Orange12
+
 
 Purpose
 
