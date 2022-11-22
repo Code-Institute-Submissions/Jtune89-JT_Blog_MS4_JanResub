@@ -80,8 +80,8 @@ class PostLike (View):
 
 class CommentCount (View):
 
-    def post(self, request, slug):
-        post = get_object_or_404(Post, slug=slug)
+    def comment(self, request, slug):
+        comment = get_object_or_404(comment, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
