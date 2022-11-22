@@ -15,9 +15,10 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/dxztoqowl/image/upload/v1669103939/parliament_wqaziq.jpg">
+                                    src="https://res.cloudinary.com/dxztoqowl/image/upload/v1669103939/parliament_wqaziq.jpg" 
+                                    alt="parliament building">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}" alt="user uploaded image">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author }}</p>
