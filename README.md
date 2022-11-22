@@ -31,7 +31,7 @@ Cloudinary
 
 Testing
 
-HTML Validator – no issues found
+HTML Validator – does not like django and has some errors relating to construct of Django code
 CSSC Validator – no issues found
 Python Validator – no issues found
 
