@@ -20,6 +20,8 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
+    comments_count = models.ManyToManyField(
+        User, related_name='blogpost_comments', blank=True)
 
     class Meta:
         ordering = ["-created_on"]
@@ -29,6 +31,9 @@ class Post(models.Model):
 
     def number_of_likes(self):
         return self.likes.count()
+
+    def number_of_comments(self):
+        return self.comments.count()
 
 
 class Comment(models.Model):
