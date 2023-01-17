@@ -10,13 +10,15 @@ Purpose
 UK politics is a minefield of nonsense and everyone has an opinion but people are often looking for information which presents an honest opinion.
 Whilst blog posts are the opinion of an individual, the site could give the user the comfort that other people are feeling the way they are.
 
-User Stories
+User Stories / Build Development / Sprints
 
-User stories are available to view within the project repo, however they have been built on the basis of ACs (Acceptance Criteria).
+User Stories have been created to document the different requirements for use of the site.  It is important to document the user stories as we need to make sure that we are creating the full requirements of the site for the user.  I wrote all the requirement stories, when I was working on a story I moved it to in development, then when I completed working on a story, I moved it to completed.
+As there is a small number of varied stories, I did not feel the need to build an Epic.
+The Acceptance Criteria on the User Stories was specific enough for me to understand what it is I had written and what the story requirements were. Which means that each of the stories written is in the build of the project.
 
-The user stories cover the main features of a blog site and what a user would expect from it.
+I completed 
 
-I did not create a wireframe for this project as the user story Kanban was sufficient for tracking each individual requirement.
+
 
 Technologies Used
 
