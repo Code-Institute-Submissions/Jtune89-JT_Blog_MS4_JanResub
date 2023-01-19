@@ -45,16 +45,15 @@ Testing
 I spent quite a while manually testing the site to ensure that the functionality works.  I would create a post and then comment on it.  Then I would like it.  Then I would delete the comment and I would unlike the post.
 I then repeated this activity on different posts.  Commenting, liking, deleting the comment and unliking the post.
 I also tested based on User Stories.
-When I implemented User Story one - I tested that the pagination works by selecting the other pages
-When I implemented User Story two - I tested that a user could open a post by opening a post
-When I implemented User Story three - I tested that a user could like a post by liking a post
-When I implemented User Story four - I tested that a user could comment on a post by commenting on a post
-When I implemented User Story five - I tested that a user could register by registering as a user
-When I implemented User Story six - I tested that a user could view comments by creating comments and then viewing them
-When I implemented User Story seven - I tested that a user could see how many likes and comments a post had by adding likes and comments and viewing them on the post
-When I implemented User Story eight - I tested that a user had to be authenticated before liking or commenting on a post by attempting to like/comment on a post when not logged in, this didn't work and therefore I knew the functionality worked
-When I implemented User Story nine - I tested that a user could un-like a post by liking a post and then unliking it
-When I implemented User Story 10 - I tested that a user could delete a comment they had added, by adding a comment and then deleting it.
+By creating various users, I was able to test:
+- pagination
+- a user could open a post
+- a user could like & unlike a post
+- a user could comment on a post
+- a user could view comments made by other users
+- a user could see how many likes or comments a post had
+- a user had to be authenticated before liking or commenting
+- a user could delete a comment they had previous made on a post
 
 HTML Validator – does not like django and has some errors relating to construct of Django code
 CSSC Validator – no issues found
@@ -66,8 +65,7 @@ Heroku<img width="1092" alt="Screenshot 2022-11-22 at 10 33 01" src="https://use
 
 Deployment:
 
-In order for these projects to be deployed, for some unknown and baffling reason, we have to do that on Heroku which charges users for storing their project builds.
-In order to deploy this project, we have to make all sorts of adjustments to the settings to make sure that this project works:
+In order to deploy this project, we have to make adjustments to the settings to make sure that this project works:
 Setting the debug flag to False
 Adding in X_FRAME_OPTIONS as "SAME_ORIGIN" otherwise summernote won't work!!
 Once that was done, I redeployed the project to GitHub.
