@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm
 from django.views.generic.edit import UpdateView, DeleteView
 from django.urls import reverse_lazy
@@ -95,11 +95,11 @@ class CommentCount (View):
 
 
 class UpdateComment(UpdateView):
-    model = CommentForm
-    fields = Post
-    template_name_suffix = 'update_comment.html'
+    model = Comment
+    fields = "body"
+    success_url = '/post_detail'
 
 
 class DeleteComment(DeleteView):
-    model = CommentForm
-    success_url = reverse_lazy('Post')
+    model = Comment
+    success_url = reverse_lazy('/post_detail')
