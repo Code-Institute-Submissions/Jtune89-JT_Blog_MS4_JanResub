@@ -94,12 +94,5 @@ class CommentCount (View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-class UpdateComment(UpdateView):
-    model = Comment
-    fields = "body"
-    success_url = '/post_detail'
-
-
-class DeleteComment(DeleteView):
-    model = Comment
-    success_url = reverse_lazy('/post_detail')
+def update_comment(request, item_id):
+    return render(request, 'templates/update.html')
