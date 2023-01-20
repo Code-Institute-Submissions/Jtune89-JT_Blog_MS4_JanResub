@@ -94,5 +94,8 @@ class CommentCount (View):
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
-def update_comment(request, item_id):
-    return render(request, 'templates/update.html')
+class UpdateComment(UpdateView):
+    model = Comment
+    template_name = 'update.html'
+    fields = "__all__"
+    success_url = '/post_detail'
