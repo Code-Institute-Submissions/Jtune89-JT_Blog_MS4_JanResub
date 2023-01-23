@@ -99,3 +99,10 @@ class UpdateComment(UpdateView):
     template_name = 'update.html'
     fields = "__all__"
     success_url = '/post_detail'
+
+
+class DeleteComment(DeleteView):
+    model = Comment
+    template_name = 'delete_comment.html'
+    fields = "__all__"
+    success_url = '/post_detail'
