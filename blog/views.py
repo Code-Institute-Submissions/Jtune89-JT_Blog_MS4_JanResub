@@ -96,13 +96,18 @@ class CommentCount (View):
 
 class UpdateComment(UpdateView):
     model = Comment
+    form_class = CommentForm
     template_name = 'update.html'
-    fields = "__all__"
-    success_url = '/post_detail'
+
+    def get_success_url(self):
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
 
 
 class DeleteComment(DeleteView):
     model = Comment
     template_name = 'delete_comment.html'
     fields = "__all__"
-    success_url = '/post_detail'
+
+    def get_success_url(self):
+        pk = self.kwargs['pk']
+        return reverse("post_detail", kwargs={"pk": post.id})
