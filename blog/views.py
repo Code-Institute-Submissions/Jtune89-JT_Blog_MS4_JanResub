@@ -109,5 +109,4 @@ class DeleteComment(DeleteView):
     fields = "__all__"
 
     def get_success_url(self):
-        pk = self.kwargs['pk']
-        return reverse("post_detail", kwargs={"pk": post.id})
+        return reverse('post_detail', kwargs={'slug': self.object.post.slug})
