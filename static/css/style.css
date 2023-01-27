@@ -138,3 +138,13 @@ body {
     float: right;
     color: #E84610;
 }
+
+.deleteButtons{
+    float: inline;
+    color: #E84610;
+}
+
+.deleteForm{
+    text-align: center;
+    padding-left: 100px;
+}

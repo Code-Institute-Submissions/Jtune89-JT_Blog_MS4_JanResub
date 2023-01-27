@@ -3,19 +3,19 @@
 {% block content %}
 {% if user.is_authenticated %}
 
-<div>
-    <div class="row">
+<div class="deleteForm">
+    <div class="deleteForm">
         <div>
-            <h3> Delete comment?</h3>
+            <h3 class="deleteForm"> Delete comment?</h3>
         </div>
     </div>
-    <div class="row">
-        <div >
-            <form method="POST">
+    <div class="deleteForm">
+        <div class="deleteForm">
+            <form class="deleteForm" method="POST">
                 {% csrf_token %}
                 <strong>Are you sure?</strong><br />
-                <button onclick="history.back()">Cancel</button>
-                <button>Delete?</button>
+                <button class="deleteButtons" onclick="history.back()">Cancel</button>
+                <button class="deleteButtons" >Delete?</button>
             </form>
         </div>
     </div>
