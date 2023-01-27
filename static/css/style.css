@@ -89,13 +89,14 @@ body {
     color: lightgray;
 }
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #115ea5;
     color: #fff;
+    padding-top: 2px;
 }
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #c1970f;
 }
 .link {
     color: white;
@@ -110,6 +111,7 @@ body {
     color: #E84610;
     border: none;
     background: transparent;
+    text-align: center;
 }
 .btn-like:hover,
 .btn-like:active {
@@ -123,10 +125,16 @@ body {
     text-align: center;
 }
 
-.CommentForm{
-    text-align: center;
+.editCommentForm{
+    text-align: left;
+    margin: auto;
 }
 
 .link{
     text-decoration: none;
+}
+
+.editButtons{
+    float: right;
+    color: #E84610;
 }
