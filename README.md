@@ -55,6 +55,10 @@ By creating various users, I was able to test:
 - a user had to be authenticated before liking or commenting
 - a user could delete a comment they had previous made on a post
 
+#### Testing Issues:
+- bug found on update/delete comment functionality where by when pressing cancel, the update/deletion would happen anyway.  Syntax error on code which needed to be re-factored.
+
+
 HTML Validator – does not like django and has some errors relating to construct of Django code
 CSSC Validator – no issues found
 
