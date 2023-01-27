@@ -17,8 +17,8 @@
             <form class="CommentForm" method="post" style="margin-top: 1.3em;">
                 {{ form | crispy }}
                 {% csrf_token %}
-                <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                <button onclick="history.back()" type="submit" class="btn btn-signup btn-lg">Cancel</button>
+                <input type="submit" value="Update" href="/" />
+                <a href="/">Cancel </a>
             </form>
             {% endif %}
 

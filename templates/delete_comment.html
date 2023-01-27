@@ -3,22 +3,16 @@
 {% block content %}
 {% if user.is_authenticated %}
 
-<div class="deleteForm">
-    <div class="deleteForm">
-        <div>
-            <h3 class="deleteForm"> Delete comment?</h3>
-        </div>
-    </div>
-    <div class="deleteForm">
-        <div class="deleteForm">
-            <form class="deleteForm" method="POST">
-                {% csrf_token %}
-                <strong>Are you sure?</strong><br />
-                <button class="deleteButtons" onclick="history.back()">Cancel</button>
-                <button class="deleteButtons" >Delete?</button>
-            </form>
-        </div>
-    </div>
+<div class="deleteComment">
+    <!-- Create a Form -->
+    <form class="deleteComment" method="POST">
+        <!-- Security token by Django -->
+        {% csrf_token %}
+        Are you sure you want to delete your comment?
+        <br></br>
+        <input type="submit" value="Yes" />
+        <a href="/">Cancel </a>
+    </form>
 </div>
 {% endif %}
 {%endblock%}
